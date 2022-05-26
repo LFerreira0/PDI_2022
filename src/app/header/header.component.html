@@ -5,10 +5,10 @@
     </div>
     <nav id="nav">
       <ul id="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#" routerLink="/feedback">Contato</a></li>
+        <li><a href="#" (click)="menu()">Home</a></li>
+        <li><a href="#sobre" (click)="menu()">Sobre</a></li>
+        <li><a href="#projetos" (click)="menu()">Projetos</a></li>
+        <li><a href="#" routerLink="/feedback" (click)="menu()">Contato</a></li>
       </ul>
       <button id="btn-mobile" (click)="menu()">Menu
         <span id="hamburger"></span>

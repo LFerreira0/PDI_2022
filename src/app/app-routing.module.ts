@@ -1,11 +1,9 @@
-import { FeedbackComponent } from './feedback/feedback.component';
-import { MainComponent } from './main/main.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: MainComponent },
-  { path: 'feedback', component: FeedbackComponent }
+  { path: '', loadChildren: () => import('./main/main.module').then(m => m.MainModule)},
+  { path: 'feedback', loadChildren: () => import('./feedback/feedback.module').then(m => m.FeedbackModule)}
 ];
 
 @NgModule({

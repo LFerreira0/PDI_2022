@@ -5,7 +5,7 @@ $verde_escuro: #001510;
 }
 section{
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   text-align: center;
 
   .contato{
@@ -16,7 +16,6 @@ section{
       background-color: transparent;
       color: rgba(114, 114, 114, 0.9);
       text-align: center;
-
     }
 
     #formulario{
@@ -33,7 +32,6 @@ section{
 
       form{
         margin-top: 2em;
-        color: red;
       }
 
       input{
@@ -74,9 +72,7 @@ section{
         font-weight: 600;
         cursor: pointer;
       }
-
     }
-
   }
 
   .scroll{
@@ -89,9 +85,7 @@ section{
     img{
       width: 70%;
     }
-
   }
-
 }
 
 @media(max-width: 900px){
@@ -108,14 +102,15 @@ section{
 
       #formulario{
         width: 100%;
+
+        h3{
+          width: 80%;
+        }
       }
 
       .scroll{
         top: 120%;
       }
-
     }
-
   }
-
 }

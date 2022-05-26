@@ -1,0 +1,49 @@
+$verde_claro: #00bf8f;
+$verde_escuro: #001510;
+$fundo: #121212;
+
+#comentarios{
+  width: 100%;
+
+  h1{
+    text-align: center;
+    color: #fff;
+  }
+
+  table{
+    color: #fff;
+    width: 35%;
+    margin: 0 auto;
+
+    tr{
+      display: flex;
+      flex-direction: column;
+      margin-top: 2em;
+    }
+
+    td:first-child{
+      color: $verde_claro;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    td:nth-child(2){
+      font-size: 12px;
+    }
+
+    td:nth-child(3){
+      margin-top: 1em;
+    }
+  }
+}
+
+@media(max-width: 900px){
+
+  #comentarios{
+    table{
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+}
