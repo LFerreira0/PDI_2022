@@ -9,6 +9,7 @@ import { ComentariosService } from '../comentarios.service';
 export class ComentariosComponent implements OnInit {
 
   comentarios: Array<any> = new Array();
+  exibirFeedback: Boolean = true;
 
   constructor(private comentariosService: ComentariosService) { }
 
@@ -20,6 +21,7 @@ export class ComentariosComponent implements OnInit {
     this.comentariosService.listarComentarios().subscribe(comentarios =>{
       this.comentarios = comentarios;
     }, err =>{
+      this.exibirFeedback = false;
       console.log('Erro ao listar comentários', err);
     })
   }

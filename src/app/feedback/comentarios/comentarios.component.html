@@ -1,9 +1,9 @@
-<section id="comentarios">
+<section id="comentarios" *ngIf="this.exibirFeedback">
   <h1>FeedBacks</h1>
   <table>
     <tr *ngFor="let comentario of comentarios">
       <td>{{comentario.nome}}</td>
-      <td>12/05/2000</td>
+      <td>{{comentario.data}}</td>
       <td>{{comentario.conteudo}}</td>
     </tr>
   </table>
