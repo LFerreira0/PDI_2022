@@ -22,4 +22,9 @@ describe('HeroComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'Olá, sou Lucas Candido Ferreira.'`), () =>{
+    expect(component.h1).toEqual('Olá, sou Lucas Candido Ferreira.');
+  }
+
 });

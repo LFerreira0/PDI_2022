@@ -9,6 +9,8 @@ export class HeroComponent implements OnInit {
 
   constructor() { }
 
+  h1 = 'Olá, sou Lucas Candido Ferreira.'
+
   ngOnInit(): void {
   }
 
