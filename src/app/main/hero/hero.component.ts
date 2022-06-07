@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var typeWriter: any;
+
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
@@ -12,6 +14,7 @@ export class HeroComponent implements OnInit {
   h1 = 'Olá, sou Lucas Candido Ferreira.'
 
   ngOnInit(): void {
+    typeWriter()
   }
 
 }
