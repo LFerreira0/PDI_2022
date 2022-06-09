@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var efeitos: any;
+
 @Component({
   selector: 'app-sobre',
   templateUrl: './sobre.component.html',
@@ -10,6 +12,7 @@ export class SobreComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    efeitos();
   }
 
 }

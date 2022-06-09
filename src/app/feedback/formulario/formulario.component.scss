@@ -72,6 +72,11 @@ section{
         font-weight: 600;
         cursor: pointer;
       }
+
+      button:disabled{
+        background: darken(#00bf8f, 20%);
+        cursor: not-allowed;
+      }
     }
   }
 

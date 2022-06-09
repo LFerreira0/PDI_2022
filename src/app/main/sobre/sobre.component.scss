@@ -4,6 +4,7 @@ $dark: #121212;
 
 *{
   background-color: transparent;
+  overflow: hidden;
 }
 
 section{
@@ -88,6 +89,15 @@ section{
         }
       }
     }
+    .fade-in{
+      opacity: 0;
+      transition: opacity 250ms ease-in;
+    }
+
+    .fade-in.appear{
+      opacity: 1;
+    }
+
   }
 
   .detalhes{
@@ -99,6 +109,7 @@ section{
       height: 100%;
       float: left;
       text-align: center;
+      transform: translateX(-50%);
 
       .content{
         background-color: transparent;
@@ -134,10 +145,23 @@ section{
       }
     }
 
+    .perfil, .conhecimentos{
+      transition:
+        opacity 250ms ease-in,
+        transform 400ms ease-in;
+      opacity: 0;
+    }
+
+    .perfil.appear, .conhecimentos.appear{
+      transform: translateX(0);
+      opacity: 1;
+    }
+
     .conhecimentos{
       width: 50%;
       height: 100%;
       float: left;
+      transform: translateX(50%);
 
       .grafico{
         margin-top: 2.1em;

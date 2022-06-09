@@ -7,8 +7,22 @@ section {
   z-index: -1;
   flex-direction: column;
   align-items: center;
+  // background: linear-gradient(-45deg, #001510, #121212);
+  // background-size: 400% 400%;
+  // animation: gradient 15s ease-in-out;
   height: 100vh;
 
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
   .conteudo{
     width: 80%;
@@ -20,7 +34,7 @@ section {
     background-color: transparent;
 
     h1, h2{
-      font-weight: normal;
+      font-weight: 500;
       background-color: transparent;
     }
 
@@ -35,6 +49,7 @@ section {
 
     span:hover{
       cursor: pointer;
+      font-weight: bolder;
     }
 
     button{
