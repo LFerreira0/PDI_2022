@@ -1,27 +1,21 @@
-# LCF
+Repositório criado para entrega de projeto de desenvolvimento interno do primeiro semestre de 2022.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
-## Development server
+Responsividade - √
+Consumo de APIs - Services √
+Mínimo de Duas Telas com Navegação Entre Elas - Rotas √
+Tipagem de Variáveis √
+Models - Interface √
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Validações (Mensagens de Erros, Máscaras e Validade das Informações) - FormGroup, Form, Validation
+Separação de Componentes - √
 
-## Code scaffolding
+Componentes Genéricos - √
+Padrões de Projeto - √
+Arquitetura de Lazyloading - √
+RxJS (Observables e etc..)
+Promises - √
+Testes Unitários - √
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+API consumida na aplicação esta em outro repositório:
+https://github.com/LFerreira0/API-de-interacoes
