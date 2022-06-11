@@ -6,9 +6,8 @@
     <section id="formulario">
       <h3>Tem alguma pergunta ou quer trabalhar comigo ?</h3>
       <br>
-
       <form action="https://formspree.io/f/mzboylar" method="POST">
-        <input type="text" id="nome" name="nome"(keyup)="validarPreenchimento()" placeholder="Nome" autocomplete="off" [(ngModel)] = "nome"><br>
+        <input type="text" id="nome" name="nome"(keyup)="validarPreenchimento()" placeholder="Nome completo" autocomplete="off" [(ngModel)] = "nome"><br>
         <input type="email" id="email" name="_replyto" (keyup)="validarPreenchimento()" placeholder="Email" autocomplete="off" [(ngModel)] = "email"><br>
         <textarea name="mensagem" id="mensagem" (keyup)="validarPreenchimento()" placeholder="Insira sua mensagem" autocomplete="off" [(ngModel)] = "mensagem"></textarea><br>
         <button type="submit" value="Send" (click)="enviar()" [disabled] = "!habilitarBotao">Enviar</button>
