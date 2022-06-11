@@ -27,5 +27,4 @@ export class FormularioComponent implements OnInit {
       this.habilitarBotao = false;
     }
   }
-
 }

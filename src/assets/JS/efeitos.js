@@ -61,5 +61,6 @@ function typeWriter(elemento){
   });
 
 }
-
-btnMobile.addEventListener('click', toogleMenu);
+if(btnMobile != null){
+  sbtnMobile.addEventListener('click', toogleMenu);
+}
