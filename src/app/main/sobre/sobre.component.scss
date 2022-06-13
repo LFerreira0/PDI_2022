@@ -20,6 +20,15 @@ section{
     margin-top: 1em;
   }
 
+  .fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+
+  .fade-in.appear{
+    opacity: 1;
+  }
+
   .beneficios{
     width: 60%;
     margin: 0 auto;
@@ -88,15 +97,6 @@ section{
         }
       }
     }
-    .fade-in{
-      opacity: 0;
-      transition: opacity 250ms ease-in;
-    }
-
-    .fade-in.appear{
-      opacity: 1;
-    }
-
   }
 
   .detalhes{
