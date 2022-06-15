@@ -6,6 +6,8 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { FeedbackComponent } from './feedback.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 export const routes: Routes = [
   { path: '', component: FeedbackComponent }
@@ -21,7 +23,8 @@ export const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class FeedbackModule { }

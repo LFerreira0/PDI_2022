@@ -5,6 +5,7 @@ import { HeroComponent } from './hero/hero.component';
 import { PortifolioComponent } from './portifolio/portifolio.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { Routes, RouterModule } from '@angular/router';
+import { FeedbackModule } from '../feedback/feedback.module';
 
 export const routes: Routes = [
   { path: '', component: MainComponent }

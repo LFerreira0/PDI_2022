@@ -16,8 +16,8 @@ import { MainModule } from './main/main.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FeedbackModule,
     MainModule,
-    FeedbackModule
   ],
   providers: [],
   bootstrap: [AppComponent]
