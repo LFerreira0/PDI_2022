@@ -10,7 +10,7 @@ header{
   align-items: center;
   position: fixed;
   z-index: 2000;
-  background-color: $fundo;
+  background-color: transparent;
 
   #marca{
     margin-left: 2em;
@@ -86,7 +86,7 @@ header{
 
 @media(max-width: 700px){
   header{
-
+    background-color: $fundo;
     #marca{
       margin-left: 1em;
     }
